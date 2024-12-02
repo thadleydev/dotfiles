@@ -1,0 +1,315 @@
+{
+    "breadcrumbs.enabled": false,
+    "css.lint.emptyRules": "ignore",
+    "editor.autoClosingQuotes": "never",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.renderLineHighlight": "all",
+    "editor.lineHeight": 1.75,
+    "editor.matchBrackets": "always",
+    "editor.colorDecorators": false,
+    "editor.minimap.enabled": false,
+    "editor.selectionHighlight": false,
+    "editor.occurrencesHighlight": "off",
+    "editor.bracketPairColorization.enabled": false,
+    "editor.cursorBlinking": "solid",
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+    "editor.cursorStyle": "block",
+    "editor.lineNumbers": "relative",
+    "editor.cursorSurroundingLines": 8,
+    "editor.foldingStrategy": "indentation",
+    "editor.foldingImportsByDefault": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "editor.guides.indentation": false,
+    "editor.fontFamily": "RobotoMono Nerd Font Mono, Cascadia Mono, Consolas, 'Courier New', monospace",
+    "eslint.validate": ["javascript"],
+    "explorer.autoReveal": false,
+    "explorer.confirmDragAndDrop": false,
+    "intelephense.format.braces": "k&r",
+    "intelephense.diagnostics.undefinedSymbols": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "java.maven.downloadSources": true,
+    "java.inlayHints.parameterNames.enabled": "none",
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "javascript.preferences.importModuleSpecifier": "non-relative",
+    "javascript.preferences.importModuleSpecifierEnding": "index",
+    "typescript.preferences.importModuleSpecifierEnding": "index",
+    "typescript.tsserver.experimental.useVsCodeWatcher": false,
+    "scss.lint.emptyRules": "ignore",
+    "files.associations": {},
+    "go.toolsManagement.autoUpdate": true,
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+        "editor.quickSuggestions": {
+            "comments": "on"
+        }
+    },
+    "php.suggest.basic": false,
+    "php.validate.executablePath": "C:\\Users\\thadl\\.config\\herd\\bin\\php83\\php.exe",
+    "prettier.semi": false,
+    "prettier.printWidth": 100,
+    "prettier.arrowParens": "avoid",
+    "prettier.trailingComma": "none",
+    "prettier.singleQuote": true,
+    "prettier.htmlWhitespaceSensitivity": "ignore",
+    "prettier.vueIndentScriptAndStyle": false,
+    "prettier.bracketSameLine": true,
+    "prettier.tabWidth": 4,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "redhat.telemetry.enabled": false,
+    "redHatDependencyAnalytics.mvn.executable.path": "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.6/bin/mvn",
+    "redHatDependencyAnalytics.reportFilePath": "/tmp/DependencyReportAnalysis.html",
+    "tailwindCSS.emmetCompletions": true,
+    "todohighlight.isEnable": true,
+    "todohighlight.isCaseSensitive": true,
+    "todohighlight.keywords": [
+        {
+            "text": "TODO:",
+            "color": "#FFFFFF",
+            "backgroundColor": "#047857"
+        },
+        {
+            "text": "NOTE:",
+            "color": "#FFFFFF",
+            "backgroundColor": "#1d4ed8"
+        },
+        {
+            "text": "FIX:",
+            "color": "#FFFFFF",
+            "backgroundColor": "#b91c1c"
+        }
+    ],
+    "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
+            "args": [],
+            "icon": "terminal-cmd"
+        }
+    },
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "vim.leader": "<space>",
+    "vim.incsearch": true,
+    "vim.hlsearch": false,
+    "vim.matchpairs": "(:),{:},[:],<:>",
+    "vim.cursorStylePerMode.insert": "block",
+    "vim.useSystemClipboard": true,
+    "vim.mouseSelectionGoesIntoVisualMode": false,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        // indent and outdent lines
+        {
+            "before": ["<"],
+            "commands": ["editor.action.outdentLines"],
+            "silent": true
+        },
+        {
+            "before": [">"],
+            "commands": ["editor.action.indentLines"],
+            "silent": true
+        },
+        {
+            "before": ["J"],
+            "commands": ["editor.action.moveLinesDownAction"],
+            "silent": true
+        },
+        // move lines up and down
+        {
+            "before": ["K"],
+            "commands": ["editor.action.moveLinesUpAction"],
+            "silent": true
+        }
+        // comment out lines
+        // {
+        //     "before": ["<leader>", "c"],
+        //     "commands": ["editor.action.commentLine"],
+        //     "silent": true
+        // }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // LSP keybindings
+        //peek definition
+        {
+            "before": ["g", "p", "d"],
+            "commands": ["editor.action.peekDefinition"],
+            "silent": true
+        },
+        //show hover
+        {
+            "before": ["g", "h"],
+            "commands": ["editor.action.showDefinitionPreviewHover"],
+            "silent": true
+        },
+        //go to implementations
+        {
+            "before": ["g", "i"],
+            "commands": ["editor.action.goToImplementation"],
+            "silent": true
+        },
+        //peek implementations
+        {
+            "before": ["g", "p", "i"],
+            "commands": ["editor.action.peekImplementation"],
+            "silent": true
+        },
+        //quick fix (lightbulb)
+        {
+            "before": ["g", "q"],
+            "commands": ["editor.action.quickFix"],
+            "silent": true
+        },
+        //go to references
+        {
+            "before": ["g", "r"],
+            "commands": ["editor.action.referenceSearch.trigger"],
+            "silent": true
+        },
+        // go to type definitions
+        {
+            "before": ["g", "t"],
+            "commands": ["editor.action.goToTypeDefinition"],
+            "silent": true
+        },
+        // peek type definitions
+        {
+            "before": ["g", "p", "t"],
+            "commands": ["editor.action.peekTypeDefinition"],
+            "silent": true
+        },
+        // replace all strings
+        {
+            "before": ["<leader>", "r"],
+            "after": [],
+            "commands": ["vim.showQuickpickCmdLine"]
+        },
+        // source action
+        {
+            "before": ["<leader>", "s", "a"],
+            "commands": ["editor.action.sourceAction"],
+            "silent": true
+        },
+        // save files
+        {
+            "before": ["<leader>", "w"],
+            "commands": ["workbench.action.files.save"],
+            "silent": true
+        },
+        // format file
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["editor.action.formatDocument"],
+            "silent": true
+        },
+        // open fuzzy finder
+        {
+            "before": ["<leader>", "p", "f"],
+            "commands": ["workbench.action.quickOpen"],
+            "silent": true
+        },
+        // switch buffers
+        {
+            "before": ["<S-h>"],
+            "commands": [":bprevious"],
+            "silent": true
+        },
+        {
+            "before": ["<S-l>"],
+            "commands": [":bnext"],
+            "silent": true
+        },
+        // split vertically and hozirontally
+        {
+            "before": ["<leader>", "v"],
+            "commands": [":vsplit"],
+            "silent": true
+        },
+        {
+            "before": ["<leader>", "s"],
+            "commands": [":split"],
+            "silent": true
+        },
+        // switch between panes
+        {
+            "before": ["<leader>", "h"],
+            "commands": ["workbench.action.focusLeftGroup"],
+            "silent": true
+        },
+        {
+            "before": ["<leader>", "j"],
+            "commands": ["workbench.action.focusBelowGroup"],
+            "silent": true
+        },
+        {
+            "before": ["<leader>", "k"],
+            "commands": ["workbench.action.focusAboveGroup"],
+            "silent": true
+        },
+        {
+            "before": ["<leader>", "l"],
+            "commands": ["workbench.action.focusRightGroup"],
+            "silent": true
+        },
+        // open file tree
+        {
+            "before": ["<leader>", "p", "v"],
+            "commands": ["workbench.explorer.fileView.focus"],
+            "silent": true
+        }
+    ],
+    // Theme customizations
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.activityBar.location": "top",
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "vscode-great-icons",
+    "workbench.colorCustomizations": {
+        // controls the snippet/suggestion color
+        // "editor.snippetTabstopHighlightBackground": "#283436",
+        // "editor.lineHighlightBackground": "#21252e",
+        // "editor.lineHighlightBorder": "#00000000",
+        "[August - Rosé Pine]": {
+            "sideBar.border": "#2a2738",
+            "statusBar.border": "#2a2738",
+            "panel.border": "#2a2738"
+        },
+        "[August - Nord (Darker)]": {
+            "sideBar.border": "#21252e",
+            "statusBar.border": "#21252e",
+            "panel.border": "#21252e"
+        },
+        "[Catppuccin Mocha]": {
+            "focusBorder": "#00000000"
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "[August - Rosé Pine]": {
+            "textMateRules": [
+                {
+                    "name": "keywords",
+                    "scope": "keyword",
+                    "settings": {
+                        "foreground": "#4e8a9f",
+                        "fontStyle": "bold"
+                    }
+                }
+            ]
+        }
+    },
+    "intelephense.files.associations": ["*.php", "*.phtml"],
+    "editor.stickyScroll.enabled": false,
+    "workbench.editor.empty.hint": "hidden"
+}

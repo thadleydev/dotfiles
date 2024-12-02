@@ -1,0 +1,122 @@
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+
+"" -- Suggested options --
+let mapleader=" "
+set scrolloff=5
+set incsearch
+
+" remove binding
+nnoremap <SPACE> <Nop>
+map Q <Nop>
+"nnoremap <ESC> <Nop>
+
+" new esc binding
+imap jj <ESC>
+
+" -- Remaps
+"file navigation"
+map <C-h> :action PreviousTab<CR>
+map <C-l> :action NextTab<CR>
+map <leader>ca :action CloseAllEditors<CR>
+nnoremap gh :action Back<CR>
+nnoremap gl :action Forward<CR>
+nnoremap gj :action MethodDown<CR>
+nnoremap gk :action MethodUp<CR>
+nnoremap gs :action GotoSuperMethod<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap g, :action JumpToLastChange<CR>
+nnoremap g. :action JumpToNextChange<CR>
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap gr :action RecentFiles<CR>
+nnoremap <leader>gc :action GotoClass<CR>
+vnoremap <leader>gc :action GotoClass<CR>
+nnoremap <leader>pf :action GotoFile<CR>
+vnoremap <leader>pf :action GotoFile<CR>
+nnoremap <leader>ww :action HideAllWindows<CR>
+nnoremap <leader>gt :action GotoTest<CR>
+nnoremap <leader>rc :action RunClass<CR>
+nnoremap ,rc :action ChooseRunConfiguration<CR>
+nnoremap <leader>gq :action QuickList.Git<CR>
+"nnoremap <leader>ns :action NewScratchFile<CR>
+nnoremap <leader>nf :action NewElementSamePlace<CR>
+nnoremap <leader>ge :action EditorLangPopupMenu<CR>
+nnoremap <leader>r :action Replace<CR>
+vnoremap <leader>r :action Replace<CR>
+vnoremap / :action Find<CR>
+nnoremap / :action Find<CR>
+nnoremap <leader>ss :action SelectInProjectView<CR>
+map <S-k> :action ShowHoverInfo<CR>
+
+" system clipboard
+vmap <leader>y "+y
+vmap <leader>d "_d
+nmap <leader>y "+yy
+nmap <leader>p "+p
+nmap <leader>P "+P
+vmap <leader>p "+p
+vmap <leader>P "+P
+
+" panes
+map <leader>sv :action SplitVertically<CR>
+map <leader>h :action PrevSplitter<CR>
+map <leader>l :action NextSplitter<CR>
+map <leader>us :action Unsplit<CR>
+
+" extract
+nnoremap <leader>iv :action IntroduceVariable<CR>
+nnoremap <leader>em :action ExtractMethod<Cr>
+vnoremap <leader>em :action ExtractMethod<Cr>
+nnoremap <leader>ic :action IntroduceConstant<CR>
+
+" move lines
+nmap <A-K> :action MoveLineUp<CR>
+nmap <A-J> :action MoveLineDown<CR>
+vmap <A-K> :action MoveLineUp<CR>
+vmap <A-J> :action MoveLineDown<CR>
+
+" duplicate lines
+vmap <C-j> :action EditorDuplicate<CR>
+nmap <C-j> :action EditorDuplicate<CR>
+
+" move cursor to BOL or EOL
+nmap <S-l> $
+nmap <S-h> ^
+vmap <S-l> $
+vmap <S-h> ^
+
+" select all
+map <C-A> gg<S-v>G
+
+" save the current buffer
+map <leader>w :action SaveDocument<CR>
+
+" formatting
+nnoremap == :action ReformatCode<CR>
+vnoremap == :action ReformatCode<CR>
+nnoremap -- :action OptimizeImports<CR>
+vnoremap -- :action OptimizeImports<CR>
+
+" terminal
+" terminal, services, database, git
+
+" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+"Plug 'machakann/vim-highlightedyank'
+nmap <C-n> <Plug>NextWholeOccurrence
+xmap <C-n> <Plug>NextWholeOccurrence
+nmap g<C-n> <Plug>NextOccurrence
+xmap g<C-n> <Plug>NextOccurrence
+xmap <C-x> <Plug>SkipOccurrence
+xmap <C-p> <Plug>RemoveOccurrence
+nmap <leader><C-n> <Plug>AllWholeOccurrences
+xmap <leader><C-n> <Plug>AllWholeOccurrences
+nmap <leader>g<C-n> <Plug>AllOccurrences
+xmap <leader>g<C-n> <Plug>AllOccurrences
+
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-commentary'
+
+
